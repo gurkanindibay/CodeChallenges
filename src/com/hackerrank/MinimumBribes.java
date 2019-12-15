@@ -87,7 +87,7 @@ public class MinimumBribes {
 
     static {
         try {
-            scanner = new Scanner(Paths.get("resources/input_bribe.txt"));
+            scanner = new Scanner(Paths.get("input_bribe.txt"));
         } catch (IOException e) {
             e.printStackTrace();
         }
