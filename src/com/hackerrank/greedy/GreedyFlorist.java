@@ -34,10 +34,7 @@ public class GreedyFlorist {
         if(k==0) return 0;
         int minimumCost = 0;
         List<Integer> costList = Arrays.stream(costs)
-                .boxed()
-                .collect(Collectors.toList());
-
-        costList.sort(Collections.reverseOrder());
+                .boxed().sorted(Collections.reverseOrder()).collect(Collectors.toList());
 
         if (k > costs.length) {
             minimumCost = costList.stream().reduce(0, Integer::sum);
