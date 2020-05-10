@@ -11,6 +11,7 @@ import java.util.Scanner;
  * First I  used three nested loops which could  not complete for most of the cases.
  * Then I could not find a solution so I got help from discussions. Sorting, then filtering the repeated values from arrays, helped me to solve the problem
  * When calculating the number of combinations I can use this formula
+ * I also ommitted to set the parameter type as long so I experienced overflow errors in test with very big numbers.
  *
  */
 public class TripleSum {
