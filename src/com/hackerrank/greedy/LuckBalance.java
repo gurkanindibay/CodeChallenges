@@ -20,8 +20,8 @@ public class LuckBalance {
 
         int lostContestIndex = 0;
         Arrays.sort(contests, new SortByLuckpoint().reversed());
-        for (int i = 0; i < contests.length; i++) {
-            luckBalance = (contests[i][1] == 0 || lostContestIndex < k) ? luckBalance + contests[i][0] : luckBalance - contests[i][0];
+        for (int[] contest : contests) {
+            luckBalance = (contest[1] == 0 || lostContestIndex < k) ? luckBalance + contest[0] : luckBalance - contest[0];
             lostContestIndex++;
         }
 
@@ -40,7 +40,7 @@ public class LuckBalance {
 
     static {
         try {
-            scanner = new Scanner(Paths.get(("resources/input_luck_balance.txt")));
+            scanner = new Scanner(Paths.get(("resources/input_reverse_shuffle_merge.txt")));
         } catch (IOException e) {
             e.printStackTrace();
         }
