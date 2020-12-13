@@ -1,7 +1,6 @@
 package algorithms.search.test;
 
 import algorithms.search.impl.BinarySearchIterativeOwn;
-import algorithms.search.impl.BinarySearchRecursive;
 
 import static org.junit.Assert.assertTrue;
 
